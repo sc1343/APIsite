@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>IST Dept Site</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.12.1-2.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- jsGrid -->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+
+    <!-- chart plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.0/dist/chart.min.js"></script>
+    <script src="jquery-ui-1.12.1-2.custom/jquery-ui.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <!-- navigation -->
+        <div class="parent2">
+            <div class="test1">
+                <a style="color:aliceblue" href="#People_Section"><i class="fa fa-address-book fa-1x" ><br><span style = "font-size: 10px;">People</span></i></a>
+
+
+            </div>
+            <div class="test2">
+                <a style="color:aliceblue" href="#resources_studyAbroad"><i class="fa fa-question-circle fa-1x" ><br><span style = "font-size: 10px;">Advice</span></i></a>
+
+
+            </div>
+            <div class="test3">
+                <a style="color:aliceblue" href="#introduction"><i class="fa fa-list fa-1x" ><br><span style = "font-size: 10px;">Data</span></i></a>
+
+
+            </div>
+
+            <div class="test4">
+                <a style="color:aliceblue" href="#studentDiv"><i class="fa fa-graduation-cap fa-1x" ><br><span style = "font-size: 10px;">Degree</span></i></a>
+
+            </div>
+            <div class="mask2"><i class="fa fa-home fa-3x"></i>
+
+            </div>
+            <script src="nav.js"></script>
+        </div>
+
+        <h1>IST Dept Site</h1>
+
+    </header>
+
+    <img id="toTop" src="assets/top.png" alt="top" width="50" height="50">
+
+    <div id="about"></div>
+    <div class="studentDiv" id="studentDiv">
+        <h2> Undergraduate Degree</h2>
+        <div id="undergraduate"></div>
+        <hr>
+        <br>
+        <h2> Graduate Degree</h2>
+        <div id="graduate"></div>
+    </div>
+
+    <div id="minor">
+        <h2>Minors Information</h2>
+        <div id="minors">
+
+
+        </div>
+    </div>
+    <div id="introduction"></div>
+
+    <div id="static">
+        <h2> Degree Statistics</h2>
+        <div id="degreeStatistics"></div>
+    </div>
+
+    <div id="careerEmp">
+        <div id="employers"></div>
+        <div id="careers"></div>
+    </div>
+
+
+    <div class="employmentTables">
+        <h2>Employment Table</h2>
+        <div id="employmentTable">
+        </div>
+    </div>
+
+
+    <h2>Coop Table</h2>
+    <div id="coopTable">
+    </div>
+
+
+
+
+    <!-- chart -->
+
+    <div class="chart" id="moreChart">
+        <h2>Number of courses offered by each degree </h2>
+        <div id="char">
+            <button id="bar">Bar</button>
+            <button id="pie">Pie</button>
+            <button id="doughnut">Doughnut</button>
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+
+    <div class="People_Section" id="People_Section">
+        <h2>Our People</h2>
+        <p>Faculty - Click on image for more information.</p>
+        <div class='grid' id="content"></div>
+        <div id="dialog"></div>
+
+        <p>Staff - Click on image for more information.</p>
+        <div class="grid" id="content2"></div>
+
+        <div id="dialog2"></div>
+    </div>
+
+
+    <h2 style="padding-top:40px;">Research by Interest Area</h2>
+    <div id="research_byInterestArea"></div>
+    <br>
+    <h2 style="padding-top:40px;">Research by Faculty</h2>
+
+
+    <div id="research_byFaculty"></div>
+    <br>
+    <div class="aboard">
+        <div id="resources_studyAbroad"></div>
+        <div id="studyAbroad"></div>
+    </div>
+
+    <h2 style="padding-top: 50px;">Advising</h2>
+
+    <div id="studentServicesTable">
+        <div id="resources_studentServices"></div>
+    </div>
+    <br>
+    <div id="resourceInfoTable">
+        <h2 style="padding-top: 20px;">Student Ambassador Information & Application</h2>
+        <div id="resources_tutorsAndLabInformation"></div>
+    </div>
+    <div id="coopEnrollmentTable">
+        <h2>Coop Enrollment</h2>
+        <div id="resources_coopEnrollment"></div>
+    </div>
+
+
+    <h2 style="padding-top: 40px;">Courses Information</h2>
+
+    <div id="courses"></div>
+
+    <h2 style="padding-top: 40px;">Map</h2>
+    <div id="maps"></div>
+
+    <footer id="footer">
+
+
+        <div id="footerg">
+
+            <div id="quickLinks"></div>
+            <div id="social"></div>
+        </div>
+
+        <div id="copyright"></div>
+
+
+
+
+    </footer>
+    <!-- Place your HTML elements above this line -->
+    <script src=script.js></script>
+
+</body>
+
+</html>
